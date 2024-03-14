@@ -14,7 +14,6 @@ This code allows the contractility analysis of ring-shaped cardiac tissues by th
 Summary of main files
 -----------------------
 MotionAnalysis.m: main code, loads videos, generates figures and creates an Excel file containing the contractility parameters of all the videos and a .mat file of all the videos.
-bfmatlab folder: containing the bioformat package, to be added to the Matlab path.
 
 Requirements
 -----------------------
