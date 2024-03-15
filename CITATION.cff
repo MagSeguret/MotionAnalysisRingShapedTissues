@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Seguret"
+  given-names: "Magali"
+  orcid: "https://orcid.org/0000-0002-3059-3113 "
+title: "MotionAnalysisRingShapedTissues"
+version: 1.0.0
+date-released: 2024-03-15
+url: "https://github.com/MagSeguret/MotionAnalysisRingShapedTissues"
