@@ -1,20 +1,20 @@
 % MESSAGE TO USERS:
 % This code works on .mp4 videos containing one single ring each.
 % It was written on MacOS, for Windows the "/" may have to be changed to
-% "\" (l.493)
+% "\" (l.498)
 
-% It requires the user to first select the folder of where the videos to
+% It requires the user to first select the folder where the videos to
 % analyze are located and it will analyze all the videos of the folder.
 
-% To start analyzing not on the first video, change the number of the
-% starting video at the start of the "for" loop on videos.
+% To begin the analysis on the second video or more, change the number of the
+% starting video in the "for" loop on videos.
 
-%For each video the sensitivity will be asked (number between 0 and 1 which
-%depends on the brightness and contrast of the video), the user must choose
-%it to be able to see the inner circle of the ring clearly. In the article we use a sensotivity around 0.3. 
-%The user will be asked if he is satistied with the sensitivity, and will answer "n" for no or "y" for
-%yes. In the "n" case, the user can enter a new sensitivity. In the "y"
-%case, the video will be analyzed.
+% For each video the sensitivity will be asked (number between 0 and 1 which
+% depends on the brightness and contrast of the video), it has to be adapted to see the inner circle of the ring clearly on the black an white image.
+% In the article we use a sensitivity around 0.3. 
+% The user will be asked if he is satistied with the sensitivity, and will answer "n" for no or "y" for
+% yes. In the "n" case, the user can enter a new sensitivity. In the "y"
+% case, the video will be analyzed.
 % If the videos can all be analyzed with the same sensitivity, the
 % sensitivity can be written directly in the code.
 
@@ -96,7 +96,7 @@ for video =1:length(videoPaths)%loop on videos, 1 can be changed to the number o
                 % imshow(BW)
                 BW2 = bwareaopen(BW,pixeldots);
                 imshow(BW2)
-                prompt = 'Are you happy with the analysis? y/n [y]: ';
+                prompt = 'Are you satisfied with the sensitivity? y/n [y]: ';
                 str = input(prompt,'s');
                 
             end
